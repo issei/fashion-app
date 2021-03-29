@@ -1,0 +1,16 @@
+Resources:
+  tb-produto:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      TableName: tb-produto
+      AttributeDefinitions:
+        - AttributeName: key-produto
+          AttributeType: S
+        - AttributeName: tamanho
+          AttributeType: N
+      KeySchema:
+        - AttributeName: key-produto
+          KeyType: HASH
+        - AttributeName: tamanho
+          KeyType: RANGE
+      BillingMode: PAY_PER_REQUEST

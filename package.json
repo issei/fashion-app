@@ -9,5 +9,8 @@
     },
     "scripts": {
         "test": "mocha --recursive tests"
+    },
+    "dependencies": {
+        "honeycomb-beeline": "^2.6.0"
     }
 }
